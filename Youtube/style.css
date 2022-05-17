@@ -1,0 +1,108 @@
+/* 사용자 사전 정의 */
+:root {
+/* 컬러 */
+    --white-color: #fafafa;
+    --black-color: #161616;
+    --icon-background: #ebebeb;
+    --해시태그: #0a58ff;
+    --gray-dark-color: #313131; 
+    --gray-light-color: #7c7c7c; 
+/* 사이즈 */
+    --side-padding: 12px;
+    --avatar-size: 40px;
+/* 폰트 크기 */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+/* 전체 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 바디 */
+body {
+    font-family: 'Glory';
+}
+/* 헤더 */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--side-padding);
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+header .logo {
+    font-size: 20px;
+    
+}
+header .ri-menu-line {
+    padding: 10px;
+    margin-right: 5px;
+}
+header .ri-youtube-fill {
+    color: #ff0000                                                          
+}
+header .icon i {
+    font-size: 20px;
+    padding-right: var(--side-padding);
+}
+
+/* 플레이어스크린 */
+.playscreen iframe {
+    width: 100%;
+    height: 500px
+
+    
+}
+
+/* 일단 여기까지!!!! */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    font-family: "Glory", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+} */
+
+
+/* ■ video 태그 --> CSS설정 값 */
+
+/* src : 비디오 파일의 주소
+controls : 컨트롤러 표시
+autoplay : 자동 재생
+loop : 반복 재생
+width : 영상의 가로길이
+height : 영상의 세로길이
+muted : 음소거 */
+
+/* div {
+    position: relative;
+    padding-bottom: 56.25%; // 16:9 비율, 75% - 4:3 비율
+    overflow: hidden; // hidden을 하지않으면 영상이 삐져나옴
+	}
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
+	} */

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>YouTube | 클론코딩</title>
+    <!-- CSS링크 연결 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Glory:wght@300;400;500;600;800&family=Gowun+Batang&family=Gowun+Dodum&family=Gugi&family=Koulen&family=Nanum+Pen+Script&family=Shadows+Into+Light&family=Sunflower&display=swap" rel="stylesheet">
+    <!-- 아이콘 CDZ -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 헤더 완성 -->
+    <header>
+        <div class="logo">
+        <!-- 아이콘링크 -->
+            <i class="ri-menu-line"></i>
+            <i class="ri-youtube-fill"></i>
+            <span class="title">RootTube</span>
+        </div>
+
+        <div class="icon">
+            <i class="ri-search-eye-line"></i>
+            <i class="ri-mic-fill"></i>
+            <i class="ri-video-add-line"></i>
+            <i class="ri-notification-4-line"></i>
+            <i class="ri-more-2-fill"></i>
+        </div>
+    </header>
+
+    <!-- 동영상 화면 -->
+    <section class="playscreen">
+        <!-- 유튜브 > 공유 > 퍼가기 > 플레이어컨트롤 체크박스 해제-->
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/04-w956-rMg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- poster 태그 >> 동영상 재생 전 보여주는 이미지 (*video 태그에서만 이용가능함) -->
+        <iframe width="500" height="500" src="https://www.youtube.com/embed/04-w956-rMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- 비디오 인포메이션 하단 박스 -->
+    <section class="Info">
+        <!--(1)데이터 -->
+        <div class="metadate">
+            <ul class="hashtags">
+                <li>#불꽃교회</li>
+                <li>#청년2부</li>
+                <li>#임근호</li>
+            </ul>
+            <div class="title&button">
+                <span class="title">
+                    [드림코딩] 프론트엔드 강의 - 유튜브 사이트 클론코딩 | 불꽃교회 |
+                    프론트엔드 개발자 입문편 ( HTML, CSS, Javascript ) 
+                </span>
+                <button class="button">
+                    <i class="ri-arrow-down-s-fill"></i>
+                </button>
+            </div>
+            <div class="view">
+                <span class="view">조회수 123,900회</span>
+            </div>
+        </div>
+        <!-- 좋아요, 싫어요 버튼 -->
+        <ul class="action">
+            <li><button><i class="ri-thumb-up-line"></i></button><span>좋아요</span></li>
+            <li><button><i class="ri-thumb-down-line"></i></button><span>싫어요</span></li>
+            <li><button><i class="ri-share-forward-line"></i></button><span>공유</span></li>
+            <li><button><i class="ri-database-2-line"></i></button><span>저장</span></li>
+            <li><button><i class="ri-star-line"></i></button><span>즐겨찾기</span></li>
+        </ul>
+        <!-- 프로필 박스 -->
+        <div class="channel">
+          <div class="meta">
+            <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/96364741_121531286205297_9010888807741915136_n.png?stp=dst-png_p320x320&_nc_cat=107&ccb=1-6&_nc_sid=85a577&_nc_ohc=IkhdftUsHEwAX_Zcj2I&_nc_ht=scontent-ssn1-1.xx&oh=00_AT9Tglhb5CvA0blaAZm8leXiA5BWHZYK3IU0A9iT3fEpNg&oe=62A87C4E" alt="">
+            <span class="name">불꽃그노</span>
+            <span class="111">구독자 90.9만명</span>
+          </div>
+          <button class="Subscription">구독</button>
+        </div>
+    </section>
+
+    <!-- 재생목록 및 스크롤 -->
+    <section class="Playlist">
+        <span class="titl&btt">
+            <button class="title">all</button>
+            <button class="title">content</button>
+            <button class="title">like</button>
+        </span>
+
+        <ul>
+            <li class="item">
+                <img width="200px;" src="https://cdn.kidshankook.kr/news/photo/202109/1007_2711_2949.png" alt="">
+                <div class="info">
+                    <span class="title">고양이 사랑해 맘마주세요| 사랑해 옴뇸뇸</span>
+                    <span class="name">넥호숙희 by 쿵이</span>
+                    <span class="time">조회수 11만회 | 1년 전</span>
+                </div>
+                <div class="button">
+                    <i class="ri-more-2-fill"></i>
+                </div>
+            </li>
+
+            <li class="item">
+                <img width="200px;" src="https://cdn.kidshankook.kr/news/photo/202109/1007_2711_2949.png" alt="">
+                <div class="info">
+                    <span class="title">청년 2부 모임 | 오후예배 이후 </span>
+                    <span class="name">청년2부 by 불꽃</span>
+                    <span class="time">조회수 3만회 | 하루 전</span>
+                </div>
+                <div class="button">
+                    <i class="ri-more-2-fill"></i>
+                </div>
+            </li>
+
+            <li class="item">
+                <img width="200px;" src="https://cdn.kidshankook.kr/news/photo/202109/1007_2711_2949.png" alt="">
+                <div class="info">
+                    <span class="title">멍멍이 사랑해 그동안 고마웠어| 하늘 나라로 간 그 아이</span>
+                    <span class="name">그노 by 깜지</span>
+                    <span class="time">조회수 102만회 | 4년 전</span>
+                </div>
+                <div class="button">
+                    <i class="ri-more-2-fill"></i>
+                </div>
+            </li>
+        </ul>
+        
+    </section> 
+    
+</body>
+</html>
